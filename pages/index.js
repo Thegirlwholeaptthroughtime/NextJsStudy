@@ -9,17 +9,20 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   const API_URL = "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
   function getData(){
     axios.get(API_URL)
     .then(res=>{
       console.log(res.data)
       setData(res.data)
+      setLoading(false)
     })
   }
 
   useEffect(()=>{
     getData();
   },[])
+
   return (
     <div>
       <Head>
