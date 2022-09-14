@@ -24,3 +24,28 @@ a {
     background: black;
   }
 }
+
+.fixBox{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+}
+
+
+.wrap{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.topWrap{
+  
+  display: flex;
+  padding-top: 20px;
+}
+.topWrap .topContainer{
+  flex: 100px 0 0;
+}
+.topWrap>div img{
+  width: 80px;
+}
