@@ -49,3 +49,12 @@ a {
 .topWrap>div img{
   width: 80px;
 }
+
+.isLoading{
+  position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: none !important;
+    border: none !important;
+}
